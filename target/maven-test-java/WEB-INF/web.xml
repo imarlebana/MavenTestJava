@@ -11,9 +11,19 @@
   </servlet>
 
   <servlet>
+    <servlet-name>ConnectDataBaseServlet</servlet-name>
+    <servlet-class>com.cice.maven.test.java.ConnectDataBaseServlet</servlet-class>
+  </servlet>
+
+  <servlet>
     <servlet-name>CicloVidaServlet</servlet-name>
     <servlet-class>com.cice.maven.test.java.CicloVidaServlet</servlet-class>
   </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ConnectDataBaseServlet</servlet-name>
+    <url-pattern>/bbdd</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>ServletTest</servlet-name>
